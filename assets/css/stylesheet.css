@@ -35,9 +35,18 @@ button {
 }
 input#levelNameInput {
   border: 0 solid transparent;
-  border-radius: 21px;
+  border-radius: 2vh;
   background-color: #0000004d;
   white-space: nowrap;
+  font-family: Pusab;
+  font-size: 30px;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke-color: #000000;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #0000008a;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 div#brownbox {
   border-width: 25px;
