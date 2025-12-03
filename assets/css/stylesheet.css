@@ -17,6 +17,7 @@ span.gold {
   color: transparent;
   background-image: linear-gradient(#ffaa00, #fcff6d);
   -webkit-background-clip: text;
+}
 html {
   background-image: linear-gradient(#0065fd, #002e73);
   height: 100%;
