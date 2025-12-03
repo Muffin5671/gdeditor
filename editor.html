@@ -6,7 +6,8 @@
     <title>GD Editor Online</title>
 
     <script>
-     const product = new URLSearchParams(window.location.search).get('levelName');
+     const myUrl2 = new URL(window.location.href);
+     const product = myUrl2.searchParams.get('levelName');
     </script>
     
   </head>
