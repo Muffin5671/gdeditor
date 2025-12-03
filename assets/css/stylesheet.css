@@ -15,7 +15,23 @@ html {
   --btnGreen: #7ADE2D;
 }
 button {
+  font-family: 'Pusab';
+  font-size: 25px;
+  -webkit-text-stroke: 1.2px;
+  -webkit-text-stroke-color: #000000;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #0000008a;
   border-image: url(/gdeditor/assets/btn_green.png) 16% round;
   border-width: 15px;
   border-radius: 15px;
+  padding: 4px 16px;
   background-color: var(--btnGreen);
+}
+div#brownbox {
+  border-width: 25px;
+  border-style: solid;
+  border-radius: 30px;
+  background-color: var(--btnGreen);
+  border-image: url(/gdeditor/assets/brownbox.png) 12% round;
+  padding: 8px 32px;
+}
