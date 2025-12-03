@@ -40,6 +40,11 @@ button {
   cursor: pointer;
   margin-top: 40px;
 }
+div#editorUndo {
+  background-color: transparent;
+  background-image: url(/gdeditor/assets/GJ_undoBtn_001.png);
+  border-width: 0px;
+}
 input#levelNameInput {
   border: 0 solid transparent;
   border-radius: 2vh;
