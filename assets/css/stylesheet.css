@@ -18,12 +18,12 @@ span.gold {
   background-image: linear-gradient(#ffaa00, #fcff6d);
   -webkit-background-clip: text;
 }
-div#gradientBG {
+html#gradientBG {
   background-image: linear-gradient(#0065fd, #002e73);
   height: 100%;
 }
-div#editorBG {
-  background-image: url('/gdeditor/assets/GJ_gamebg');
+html#editorBG {
+  background-image: url('/gdeditor/assets/game_bg_01_001-uhd.png');
 }
 html {
   --gdbrown: #995533;
