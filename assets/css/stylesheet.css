@@ -1,4 +1,4 @@
-@font-face {font-family: Pusab; src: url('../Pusab.ttf')}
+@font-face {font-family: Pusab; src: url('/gdeditor/assets/Pusab.ttf')}
 
 div#content {
   display: grid;
@@ -7,46 +7,56 @@ div#content {
 }
 p {
   font-family: Pusab;
-  font-size: 40px;
-  -webkit-text-stroke: 1.5px;
+  font-size: 50px;
+  -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #000000;
   color: #ffffff;
-  text-shadow: 2px 2px 3px #0000008a;
+  text-shadow: 3.3px 3.3px 1.5px #00000050;
 }
+span.gold {
+  color: transparent;
+  background-image: linear-gradient(#ffaa00, #fcff6d);
+  -webkit-background-clip: text;
 html {
   background-image: linear-gradient(#0065fd, #002e73);
   height: 100%;
   --gdbrown: #995533;
   --btnGreen: #7ADE2D;
+  --fancybox: #001931;
 }
 button {
   font-family: 'Pusab';
   font-size: 25px;
-  -webkit-text-stroke: 1.2px;
+  -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #000000;
   color: #ffffff;
-  text-shadow: 1px 1px 3px #0000008a;
+  text-shadow: 2.3px 2.3px 1.5px #00000050;
   border-image: url(/gdeditor/assets/btn_green.png) 16% round;
   border-width: 15px;
   border-radius: 15px;
-  padding: 4px 16px;
+  padding: 4px 32px;
   background-color: var(--btnGreen);
   cursor: pointer;
+  margin-top: 40px;
 }
 input#levelNameInput {
   border: 0 solid transparent;
   border-radius: 2vh;
   background-color: #0000004d;
-  white-space: nowrap;
   font-family: Pusab;
   font-size: 30px;
-  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke: 1.2px;
   -webkit-text-stroke-color: #000000;
   color: #ffffff;
-  text-shadow: 2px 2px 3px #0000008a;
+  text-shadow: 2.3px 2.3px 1.5px #00000050;
+  text-align: center;
   outline: none;
   padding-left: 10px;
   padding-right: 10px;
+}
+::placeholder {
+  color: #6F98D8;
+  font-size: 25px;
 }
 div#brownbox {
   border-width: 25px;
@@ -57,4 +67,10 @@ div#brownbox {
   padding: 0px 128px 24px;
   display: grid;
   justify-items: center;
+}
+div#fancybox {
+  border: 28px solid rgba(0, 0, 0, 0);
+  border-radius: 32px;
+  background-color: var(--fancybox);
+  border-image: url(/gdeditor/assets/fancybox.png) 10% stretch;
 }
