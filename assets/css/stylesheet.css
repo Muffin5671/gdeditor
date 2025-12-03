@@ -74,4 +74,7 @@ div#fancybox {
   border-radius: 32px;
   background-color: var(--fancybox);
   border-image: url(/gdeditor/assets/fancybox.png) 10% stretch;
+  padding: 0px 48px 24px;
+  display: grid;
+  justify-items: center;
 }
