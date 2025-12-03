@@ -45,6 +45,23 @@ button#editorUndo {
   border-width: 0px;
   background-size: 100%;
   background-position-y: center;
+  padding: 32px 32px;
+}
+button#editorRedo {
+  background-color: transparent;
+  background-image: url(/gdeditor/assets/GJ_redoBtn_001.png);
+  border-width: 0px;
+  background-size: 100%;
+  background-position-y: center;
+  padding: 32px 32px;
+}
+button#editorTrash {
+  background-color: transparent;
+  background-image: url(/gdeditor/assets/GJ_trashBtn_001.png);
+  border-width: 0px;
+  background-size: 100%;
+  background-position-y: center;
+  padding: 32px 32px;
 }
 input#levelNameInput {
   border: 0 solid transparent;
