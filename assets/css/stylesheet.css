@@ -45,7 +45,8 @@ button#editorUndo {
   border-width: 0px;
   background-size: 100%;
   background-position-y: center;
-  padding: 32px 32px;
+  padding: 36px 36px;
+  margin-right: 8px;
 }
 button#editorRedo {
   background-color: transparent;
@@ -53,7 +54,8 @@ button#editorRedo {
   border-width: 0px;
   background-size: 100%;
   background-position-y: center;
-  padding: 32px 32px;
+  padding: 36px 36px;
+  margin-right: 8px;
 }
 button#editorTrash {
   background-color: transparent;
@@ -61,7 +63,8 @@ button#editorTrash {
   border-width: 0px;
   background-size: 100%;
   background-position-y: center;
-  padding: 32px 32px;
+  padding: 36px 36px;
+  margin-right: 8px;
 }
 input#levelNameInput {
   border: 0 solid transparent;
