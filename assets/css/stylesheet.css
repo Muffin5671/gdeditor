@@ -19,7 +19,7 @@ span.gold {
   -webkit-background-clip: text;
   text-shadow: 0 0 transparent;
 }
-.gradient-text::before {
+span.gold::before {
   content: attr(data-text);
   position: absolute;
   left: 0;
