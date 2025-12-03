@@ -6,8 +6,7 @@
     <title>GD Editor Online</title>
 
     <script>
-      const myUrl2 = new URL(window.location.toLocaleString());
-      const product = urlSearchParams.get('levelName');
+     const product = new URLSearchParams(window.location.search).get('levelName');
     </script>
     
   </head>
