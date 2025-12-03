@@ -33,6 +33,12 @@ button {
   background-color: var(--btnGreen);
   cursor: pointer;
 }
+input#levelNameInput {
+  border: 0 solid transparent;
+  border-radius: 21px;
+  background-color: #0000004d;
+  white-space: nowrap;
+}
 div#brownbox {
   border-width: 25px;
   border-style: solid;
