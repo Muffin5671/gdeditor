@@ -38,12 +38,13 @@ button {
   padding: 4px 32px;
   background-color: var(--btnGreen);
   cursor: pointer;
-  margin-top: 40px;
 }
 button#editorUndo {
   background-color: transparent;
   background-image: url(/gdeditor/assets/GJ_undoBtn_001.png);
   border-width: 0px;
+  background-size: 100%;
+  background-position-y: center;
 }
 input#levelNameInput {
   border: 0 solid transparent;
