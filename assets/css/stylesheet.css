@@ -116,6 +116,7 @@ div#brownbox {
   padding: 0px 128px 24px;
   display: grid;
   justify-items: center;
+  z-index: -1;
 }
 div#fancybox {
   border: 28px solid rgba(0, 0, 0, 0);
@@ -125,4 +126,5 @@ div#fancybox {
   padding: 0px 48px 24px;
   display: grid;
   justify-items: center;
+  z-index: -1;
 }
