@@ -1,4 +1,4 @@
-@font-face {font-family: Pusab; src: url('/gdeditor/assets/Pusab.ttf')}
+@font-face {font-family: Pusab; src: url(/gdeditor/assets/Pusab.ttf)}
 
 div#content {
   display: grid;
@@ -19,7 +19,7 @@ span.gold {
   -webkit-background-clip: text;
   text-shadow: 0 0 transparent;
 }
-span.gold::before {
+span.gold::before { /* aaaaaa why did making gold text have to be so hard */
   content: attr(data-text);
   position: absolute;
   color: #00000050;
@@ -40,7 +40,11 @@ html#gradientBG {
   height: 100%;
 }
 html#editorBG {
-  background-image: url('/gdeditor/assets/game_bg_01_001-uhd.png');
+  background-image: url(/gdeditor/assets/game_bg_01_001-uhd.png);
+  background-color: #287dff;
+  background-blend-mode: multiply;
+  background-position-y: center;
+  background-size: 1500px;
 }
 html {
   --gdbrown: #995533;
@@ -54,7 +58,7 @@ button {
   -webkit-text-stroke-color: #000000;
   color: #ffffff;
   text-shadow: 2.3px 2.3px 1.5px #00000050;
-  border-image: url('/gdeditor/assets/btn_green.png') 16% round;
+  border-image: url(/gdeditor/assets/btn_green.png) 16% round;
   border-width: 15px;
   border-radius: 15px;
   padding: 4px 32px;
@@ -63,7 +67,7 @@ button {
 }
 button#editorUndo {
   background-color: transparent;
-  background-image: url('/gdeditor/assets/GJ_undoBtn_001.png');
+  background-image: url(/gdeditor/assets/GJ_undoBtn_001.png);
   border-width: 0px;
   background-size: 100%;
   background-position-y: center;
@@ -72,7 +76,7 @@ button#editorUndo {
 }
 button#editorRedo {
   background-color: transparent;
-  background-image: url('/gdeditor/assets/GJ_redoBtn_001.png');
+  background-image: url(/gdeditor/assets/GJ_redoBtn_001.png);
   border-width: 0px;
   background-size: 100%;
   background-position-y: center;
@@ -81,12 +85,32 @@ button#editorRedo {
 }
 button#editorTrash {
   background-color: transparent;
-  background-image: url('/gdeditor/assets/GJ_trashBtn_001.png');
+  background-image: url(/gdeditor/assets/GJ_trashBtn_001.png);
   border-width: 0px;
   background-size: 100%;
   background-position-y: center;
   padding: 36px 36px;
   margin-right: 8px;
+}
+button#editorZoomIn {
+  background-color: transparent;
+  background-image: url(/gdeditor/assets/GJ_zoomInBtn_001.png);
+  border-width: 0px;
+  background-size: 100%;
+  background-position-y: center;
+  padding: 24px 24px;
+  margin-bottom: 8px;
+  transform: translate(-230px, 70px);
+}
+button#editorZoomOut {
+  background-color: transparent;
+  background-image: url(/gdeditor/assets/GJ_zoomOutBtn_001.png);
+  border-width: 0px;
+  background-size: 100%;
+  background-position-y: center;
+  padding: 24px 24px;
+  margin-bottom: 8px;
+  transform: translate(-278px, 130px);
 }
 input#levelNameInput {
   border: 0 solid transparent;
@@ -112,7 +136,7 @@ div#brownbox {
   border-style: solid;
   border-radius: 30px;
   background-color: var(--gdbrown);
-  border-image: url('/gdeditor/assets/brownbox.png') 12% round;
+  border-image: url(/gdeditor/assets/brownbox.png) 12% round;
   padding: 0px 128px 24px;
   display: grid;
   justify-items: center;
@@ -122,7 +146,7 @@ div#fancybox {
   border: 28px solid rgba(0, 0, 0, 0);
   border-radius: 32px;
   background-color: var(--fancybox);
-  border-image: url('/gdeditor/assets/fancybox.png') 10% stretch;
+  border-image: url(/gdeditor/assets/fancybox.png) 10% stretch;
   padding: 0px 48px 24px;
   display: grid;
   justify-items: center;
