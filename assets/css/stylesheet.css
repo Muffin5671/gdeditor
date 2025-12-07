@@ -1,4 +1,5 @@
-@font-face {font-family: Pusab; src: url(/gdeditor/assets/Pusab.ttf)}
+@font-face {font-family: Pusab; src: url(/gdeditor/assets/fonts/Pusab.ttf)}
+@font-face {font-family: Aller; src: url(/gdeditor/assets/fonts/Aller.ttf)}
 
 div#content {
   display: grid;
