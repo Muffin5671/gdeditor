@@ -133,6 +133,18 @@ input#levelNameInput {
   color: #6F98D8;
   font-size: 25px;
 }
+div#david {
+  background-image: url(/gdeditor/assets/david.png);
+  margin-right: 5px;
+}
+div#xander {
+  background-image: url(/gdeditor/assets/xander.png);
+  margin-right: 5px;
+}
+div#jordan {
+  background-image: url(/gdeditor/assets/jordan.png);
+  margin-right: 5px;
+}
 div#brownbox {
   border-width: 25px;
   border-style: solid;
