@@ -1,6 +1,6 @@
 <img src="https://muffin5671.github.io/gdeditor/assets/GJ_hammerIcon_001.png" title="GDEditor" align="center">
 
---
+---
 
 # GDEditor
 
