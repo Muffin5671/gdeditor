@@ -135,15 +135,18 @@ input#levelNameInput {
 }
 div#david {
   background-image: url(/gdeditor/assets/david.png);
-  margin-right: 5px;
+  background-size: 48px;
+  padding: 23.8px;
 }
 div#xander {
   background-image: url(/gdeditor/assets/xander.png);
-  margin-right: 5px;
+  background-size: 48px;
+  padding: 23.8px;
 }
 div#jordan {
   background-image: url(/gdeditor/assets/jordan.png);
-  margin-right: 5px;
+  background-size: 48px;
+  padding: 23.8px;
 }
 div#brownbox {
   border-width: 25px;
