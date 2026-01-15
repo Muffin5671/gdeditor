@@ -9,6 +9,7 @@ div#content {
 div#icons {
   display: flex;
   margin: 80px;
+}
 p {
   font-family: Pusab;
   font-size: 50px;
