@@ -6,6 +6,9 @@ div#content {
   justify-items: center;
   transform: translate(0px, 150px);
 }
+div#icons {
+  display: flex;
+  margin: 80px;
 p {
   font-family: Pusab;
   font-size: 50px;
@@ -137,11 +140,13 @@ div#david {
   background-image: url(/gdeditor/assets/david.png);
   background-size: 48px;
   padding: 23.8px;
+  margin-right: 10px;
 }
 div#xander {
   background-image: url(/gdeditor/assets/xander.png);
   background-size: 48px;
   padding: 23.8px;
+  margin-right: 10px;
 }
 div#jordan {
   background-image: url(/gdeditor/assets/jordan.png);
