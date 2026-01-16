@@ -4,20 +4,16 @@
     <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="/gdeditor/assets/css/stylesheet.css">
     <title>GD Editor Online</title>
-
-    <script>
-     const myUrl2 = new URL(window.location.href);
-     const product = myUrl2.searchParams.get('levelName');
-    </script>
-    
+    <script src="js/script.js" type="text/javascript"></script>
   </head>
   <body>
     <div id="editor">
-     <button id="editorUndo">
-     <button id="editorRedo">
-     <button id="editorTrash">
-     <button id="editorZoomIn">
-     <button id="editorZoomOut">
+      <div id="uiButtons">
+      <button id="editorUndo"></button>
+      <button id="editorRedo"></button>
+      <button id="editorTrash"></button>
+      <button id="editorZoomIn"></button>
+      <button id="editorZoomOut"></button>
     </div>
   </body>
 </html>
