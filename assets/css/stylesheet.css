@@ -8,7 +8,7 @@ div#content {
 }
 div#icons {
   display: flex;
-  margin: 80px;
+  margin: 50px;
 }
 p {
   font-family: Pusab;
@@ -144,13 +144,14 @@ input#levelDescInput {
   outline: none;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 20px;
 }
 ::placeholder {
   color: #6F98D8;
   font-size: 25px;
 }
 input#levelDescInput::placeholder {
-  color: #6F98D8;
+  color: #351e12;
   font-size: 20px;
 }
 div#david {
