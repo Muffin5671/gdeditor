@@ -133,6 +133,18 @@ input#levelNameInput {
   padding-left: 10px;
   padding-right: 10px;
 }
+input#levelDescInput {
+  border: 0 solid transparent;
+  border-radius: 2vh;
+  background-color: #0000004d;
+  font-family: Helvetica;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 ::placeholder {
   color: #6F98D8;
   font-size: 25px;
