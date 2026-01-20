@@ -8,6 +8,9 @@ function updateBGCol() {
 } 
 
 function getLevelData() {
+  let levelName = new URLSearchParams(document.location.search).get('levelName');
+  let levelDesc = new URLSearchParams(document.location.search).get('levelDesc');
+  let lastUpdated = new Date().toDateString();
   let levelData = {
     "metadata": {
       "levelName":levelName,
@@ -23,9 +26,6 @@ function getLevelData() {
   };
 }
 function saveLevel() {
-  let levelName = new URLSearchParams(document.location.search).get('levelName');
-  let levelDesc = new URLSearchParams(document.location.search).get('levelDesc');
-  let lastUpdated = new Date().toDateString();
   getLevelData();
   localStorage.GDEditor = JSON.stringify(levelData);
 }
