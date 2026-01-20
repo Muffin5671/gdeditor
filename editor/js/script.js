@@ -3,7 +3,7 @@ function readLVLParameters() {
   let levelDesc = new URLSearchParams(document.location.search).get('levelDesc');
 }
 
-function saveLevel {
+function saveLevel() {
   let levelData = {
     "metadata": {
       "levelName":levelName,
