@@ -3,7 +3,7 @@ function readLVLParameters() {
   let levelDesc = new URLSearchParams(document.location.search).get('levelDesc');
 }
 
-function updateBGCol {
+function updateBGCol() {
   document.getElementById('editorBG').style.backgroundColor = document.getElementById('bgColorPicker').value;
 } 
 
