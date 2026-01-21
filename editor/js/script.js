@@ -3,7 +3,7 @@ function readLVLParameters() {
   let levelDesc = new URLSearchParams(document.location.search).get('levelDesc');
 }
 
-function levelNameDetector() {
+window.onload = function levelNameDetector() {
   let levelName = new URLSearchParams(document.location.search).get('levelName');
   if (levelName == null) {
     document.location.href = '../';
