@@ -1,9 +1,10 @@
-window.onload =
+window.onload = function clearMessage() {
   if (new URLSearchParams(document.location.search).get('clearMessage') == 1) {
     let tag = document.createElement('div');
     tag.innerHTML = '<p style="color: #00000066; font-style: italic; margin-top: 0;"><span class="helvetica">Successfully cleared all levels.</span></p>';
     document.body.appendChild(tag);
   }
+}
 
 window.onload = function createLVLListItem() {
   try {
