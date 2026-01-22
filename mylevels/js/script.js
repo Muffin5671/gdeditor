@@ -1,3 +1,10 @@
+window.onload =
+  if (new URLSearchParams(document.location.search).get('clearMessage') == 1) {
+    let tag = document.createElement('div');
+    tag.innerHTML = '<p style="color: #00000066; font-style: italic; margin-top: 0;"><span class="helvetica">Successfully cleared all levels.</span></p>';
+    document.body.appendChild(tag);
+  }
+
 window.onload = function createLVLListItem() {
   try {
     let tag = document.createElement('div');
@@ -7,5 +14,15 @@ window.onload = function createLVLListItem() {
     let tag = document.createElement('div');
     tag.innerHTML = '<p><span class="helvetica">An <cr>error</cr> occured while loading level list.</span></p>';
     document.body.appendChild(tag);
+  }
+}
+
+function clearAllLVLs() {
+  if (confirm('Are you sure you want to delete all of your levels?')) {
+    if (confirm('Are you REALLY sure you want to delete ALL of your created levels? This cannot be undone.')) {
+      localStorage.removeItem('GDEditor');
+      window.location.href = 
+    '/gdeditor/mylevels/?clearMessage=1';
+    }
   }
 }
