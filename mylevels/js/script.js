@@ -5,7 +5,7 @@ window.onload = function createLVLListItem() {
     document.body.appendChild(tag);
   } catch (error) {
     let tag = document.createElement('div');
-    tag.innerHTML = '<p>An error occured while loading level list.';
+    tag.innerHTML = '<p><span class="helvetica">An <cr>error</cr> occured while loading level list.</span></p>';
     document.body.appendChild(tag);
   }
 }
