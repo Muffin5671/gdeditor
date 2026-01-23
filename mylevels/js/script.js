@@ -1,11 +1,3 @@
-function clearMessage() {
-  if (new URLSearchParams(document.location.search).get('clearMessage') == 1) {
-    let tag = document.createElement('div');
-    tag.innerHTML = '<p style="color: #00000066; font-style: italic; margin-top: 0;"><span class="helvetica">Successfully cleared all levels.</span></p>';
-    document.body.appendChild(tag);
-  }
-}
-
 window.onload = function createLVLListItem() {
   try {
     let tag = document.createElement('div');
@@ -14,6 +6,11 @@ window.onload = function createLVLListItem() {
   } catch (error) {
     let tag = document.createElement('div');
     tag.innerHTML = '<p><span class="helvetica">An <cr>error</cr> occured while loading level list.</span></p>';
+    document.body.appendChild(tag);
+  }
+  if (new URLSearchParams(document.location.search).get('clearMessage') == 1) {
+    let tag = document.createElement('div');
+    tag.innerHTML = '<p style="color: #00000066; font-style: italic; margin-top: 0;"><span class="helvetica">Successfully cleared all levels.</span></p>';
     document.body.appendChild(tag);
   }
 }
