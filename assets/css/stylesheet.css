@@ -133,7 +133,7 @@ button#editorZoomOut {
   margin-bottom: 8px;
   transform: translate(-278px, 130px);
 }
-input#levelNameInput {
+input {
   border: 0 solid transparent;
   border-radius: 2vh;
   background-color: #0000004d;
