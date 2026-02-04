@@ -7,7 +7,7 @@ window.onload = function createLVLListItem() {
     document.body.appendChild(tag);
   } catch (error) {
     let tag = document.createElement('div');
-    if (!(JSON.parse(localStorage.GDEditorDev) == null)) {
+    if (!(localStorage.GDEditorDev == undefined)) {
       tag.innerHTML = '<p><span class="helvetica">An <cr>error</cr> occured while loading level list.</span></p><br><code>' + error + '</code>';
       document.body.appendChild(tag);
     } else {
