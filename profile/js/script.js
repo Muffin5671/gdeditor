@@ -1,6 +1,6 @@
 function userNameCheck() {
   if (document.getElementById('userNameInput').value == '' || /\s/.test(document.getElementById('userNameInput').value)) {
-    alert('Username cannot be empty!');
+    alert('Username is invalid! (cannot be empty/cannot contain spaces)');
   } else {
     if (document.getElementById('userNameInput').value == 'MuffinGDYT') {
       localStorage.GDEditorDev = true;
