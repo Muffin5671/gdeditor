@@ -1,1 +1,7 @@
-[{"ID":1, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/1.png"}]
+[
+  {"ID":1, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/1.png"},
+  {"ID":2, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/2.png"},
+  {"ID":3, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/3.png"},
+  {"ID":4, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/4.png"},
+  {"ID":5, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/5.png"}
+]
