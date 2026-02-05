@@ -1,10 +1,10 @@
 function readLVLParameters() {
-  let levelName = new URLSearchParams(document.location.search).get('levelName');
-  let levelDesc = new URLSearchParams(document.location.search).get('levelDesc');
+  let levelName = new URLSearchParams(window.location.search).get('levelName');
+  let levelDesc = new URLSearchParams(window.location.search).get('levelDesc');
 }
 
 window.onload = function levelNameDetector() {
-  let levelName = new URLSearchParams(document.location.search).get('levelName');
+  let levelName = new URLSearchParams(window.location.search).get('levelName');
   if (levelName == null) {
     document.location.href = '../';
   }
@@ -15,14 +15,16 @@ function updateBGCol() {
 } 
 
 function saveLevel() {
-  let levelName = new URLSearchParams(document.location.search).get('levelName');
-  let levelDesc = new URLSearchParams(document.location.search).get('levelDesc');
+  let levelName = new URLSearchParams(window.location.search).get('levelName');
+  let levelDesc = new URLSearchParams(window.location.search).get('levelDesc');
+  let levelAuthor = localStorage.GDEditorUsername;
   let lastUpdated = new Date().toDateString();
   let bgColor = document.getElementById('editorBG').style.backgroundColor;
   let levelData = {
     metadata: {
       levelName: levelName,
       levelDesc: levelDesc,
+      levelAuthor: levelAuthor,
       lastUpdated: lastUpdated
       },
     bgColor: bgColor,
