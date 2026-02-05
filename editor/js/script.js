@@ -38,3 +38,16 @@ function saveLevel() {
 function loadLevel() {
   document.getElementById('editorBG').style.backgroundColor = JSON.parse(localStorage.GDEditorLevels).bgColor;
 }
+
+async function fetchObjJSON() {
+  // GET obj list
+  const data = await fetch('https://muffin5671.github.io/gdeditor/editor/objects/objList.json');
+  // convert into real data
+  const response = await data.json();
+  return response;
+}
+
+async function getObjList() {
+  const json = await fetchObjJSON();
+  return json;
+}
