@@ -54,4 +54,6 @@ async function getObjList() {
   return json;
 }
 
-let objList = await getObjList()
+async function readObjList() {
+  let objList = await getObjList();
+}
