@@ -53,3 +53,5 @@ async function getObjList() {
   const json = await fetchObjJSON();
   return json;
 }
+
+let objList = await getObjList()
