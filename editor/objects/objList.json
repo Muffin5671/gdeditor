@@ -1,7 +1,24 @@
 [
-  {"ID":1, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/1.png"},
-  {"ID":2, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/2.png"},
-  {"ID":3, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/3.png"},
-  {"ID":4, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/4.png"},
-  {"ID":5, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/5.png"}
+  {
+    "tabName":"Blocks","content": [
+      {"ID":1, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/1.png"},
+      {"ID":2, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/2.png"},
+      {"ID":3, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/3.png"},
+      {"ID":4, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/4.png"},
+      {"ID":5, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/5.png"}
+    ]
+  },
+  {
+    "tabName":"Hazards","content": [
+      {"ID":8, "objType":"hazard", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/8.png"},
+      {"ID":39, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/39.png"},
+      {"ID":9, "objType":"object", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/9.png"}
+    ]
+  },
+  {
+    "tabName":"Triggers","content": [
+      {"ID":29, "objType":"trigger", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/29.png"},
+      {"ID":30, "objType":"trigger", "imgURL":"https://muffin5671.github.io/gdeditor/assets/objs/30.png"}
+    ]
+  }
 ]
