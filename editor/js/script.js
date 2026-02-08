@@ -41,12 +41,12 @@ function saveLevel() {
   localStorage.GDEditorLevels = JSON.stringify(generateLevelData());
 }
 
-function loadLevel() {
-  document.getElementById('editorBG').style.backgroundColor = JSON.parse(localStorage.GDEditorLevels).bgColor;
+function loadLevel(levelData) {
+  document.getElementById('editorBG').style.backgroundColor = levelData.bgColor;
 }
 
 // copy pasted code from Kanchu on www.stackoverflow.com/questions/13405129/create-and-save-a-file-with-javascript
-// i still don't know how to download files :)))
+// i still don't know how to download files on my own :)))
 function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -63,6 +63,10 @@ function download(data, filename, type) {
             window.URL.revokeObjectURL(url);  
         }, 0); 
     }
+}
+
+function saveLVLToFile() {
+  download(JSON.stringify(generateLevelData()), 'level.json', 'application/json');
 }
 
 async function fetchObjJSON() {
