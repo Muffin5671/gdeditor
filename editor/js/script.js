@@ -14,7 +14,7 @@ function updateBGCol() {
   document.getElementById('editorBG').style.backgroundColor = document.getElementById('bgColorPicker').value;
 } 
 
-function saveLevel() {
+function generateLevelData() {
   let levelName = new URLSearchParams(window.location.search).get('levelName');
   let levelDesc = new URLSearchParams(window.location.search).get('levelDesc');
   let levelAuthor = localStorage.GDEditorUsername;
@@ -34,11 +34,35 @@ function saveLevel() {
       {object: 1, x: 45, y: 15}
       ]
   };
-  localStorage.GDEditorLevels = JSON.stringify(levelData);
+  return levelData;
+}
+
+function saveLevel() {
+  localStorage.GDEditorLevels = JSON.stringify(generateLevelData());
 }
 
 function loadLevel() {
   document.getElementById('editorBG').style.backgroundColor = JSON.parse(localStorage.GDEditorLevels).bgColor;
+}
+
+// copy pasted code from Kanchu on www.stackoverflow.com/questions/13405129/create-and-save-a-file-with-javascript
+// i still don't know how to download files :)))
+function download(data, filename, type) {
+    var file = new Blob([data], {type: type});
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+        window.navigator.msSaveOrOpenBlob(file, filename);
+    else { // Others
+        var a = document.createElement("a"),
+                url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);  
+        }, 0); 
+    }
 }
 
 async function fetchObjJSON() {
