@@ -16,6 +16,6 @@ async function fileCheck() {
   if (document.getElementById('levelFileInput').files[0] == undefined) {
     alert('Please provide a level file.');
   } else {
-    window.location.replace('../editor/?levelName=' + encodeURI(levelMetadata.levelName) + '&levelDesc=' + encodeURI(levelMetadata.levelDesc) + '&levelData=' + encodeURI(levelData.levelDesc));
+    window.location.replace('../editor/?levelName=' + encodeURI(levelMetadata.levelName) + '&levelDesc=' + encodeURI(levelMetadata.levelDesc) + '&levelData=' + encodeURI(JSON.stringify(levelData)));
   }
 }
