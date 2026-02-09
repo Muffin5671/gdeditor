@@ -10,7 +10,7 @@ async function getFileData() {
   return JSON.parse(fileContent).data;
 }
 
-function fileCheck() {
+async function fileCheck() {
   let levelMetadata = await getFileMetadata();
   let levelData = await getFileData();
   if (document.getElementById('levelFileInput').files[0] == undefined) {
