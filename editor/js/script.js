@@ -27,9 +27,9 @@ function generateLevelData() {
       levelAuthor: levelAuthor,
       lastUpdated: lastUpdated
       },
-    bgColor: bgColor,
-    grndColor: "rgb(0,0,0)",
     data: [
+      {bgColor: bgColor,
+       grndColor: "rgb(0,0,0)"},
       {object: 1, x: 15, y: 15},
       {object: 1, x: 45, y: 15}
       ]
