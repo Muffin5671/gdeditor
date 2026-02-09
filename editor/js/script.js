@@ -1,3 +1,19 @@
+function gzip(string) {
+  const compressed = pako.gzip(string);
+  return btoa(String.fromCharCode(...compressed));
+}
+
+function ungzip(string) {
+  const binary = atob(string);
+  const bytes = new Uint8Array(binary.length);
+
+  for (let i = 0; i < binary.length; i++) {
+    bytes[i] = binary.charCodeAt(i);
+  }
+
+  return new TextDecoder().decode(pako.ungzip(bytes));
+}
+
 function readLVLParameters() {
   let levelName = new URLSearchParams(window.location.search).get('levelName');
   let levelDesc = new URLSearchParams(window.location.search).get('levelDesc');
