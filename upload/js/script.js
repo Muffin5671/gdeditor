@@ -1,3 +1,8 @@
+function gzip(string) {
+  const compressed = pako.gzip(string);
+  return btoa(String.fromCharCode(...compressed));
+}
+
 async function getFileMetadata() {
   let file = document.getElementById('levelFileInput').files[0];
   let fileContent = await file.text();
@@ -16,6 +21,6 @@ async function fileCheck() {
   if (document.getElementById('levelFileInput').files[0] == undefined) {
     alert('Please provide a level file.');
   } else {
-    window.location.replace('../editor/?levelName=' + encodeURI(levelMetadata.levelName) + '&levelDesc=' + encodeURI(levelMetadata.levelDesc) + '&levelData=' + encodeURI(JSON.stringify(levelData)));
+    window.location.replace('../editor/?levelName=' + encodeURI(levelMetadata.levelName) + '&levelDesc=' + encodeURI(levelMetadata.levelDesc) + '&levelData=' + encodeURI(gzip(JSON.stringify(levelData))));
   }
 }
